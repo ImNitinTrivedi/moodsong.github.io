@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
+
+html{
+  margin:0;
+  padding:0;
+}
+
+body{
+  height: 100vh;
+  background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+}
+
+.main-forms {
+    padding: 30px;
+  }
+  
+  .main-forms, h2{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(133, 38, 177);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  
+  .form-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-wrapper > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input {
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border: solid 2px rgba(133, 38, 177, 0.3);
+    text-align: center;
+    font: inherit;
+  }
+  
+  button, .button {
+    height: 40px;
+    width: 180px;
+    margin-top: 30px;
+    background-color: rgb(149, 216, 179);
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px rgb(133, 38, 177);
+    font-size: 20px;
+    font: inherit;
+    align-self: center;
+  }
+
+  .login{
+    color: white;
+  }
+
+  video{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+
+  .info-text{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: "ZCOOL QingKe HuangYou";
+  }
+
+  @media screen and (max-width: 600px) {
+    video{
+      width: 100%;
+      height: auto;
+     
+      top: 50%;
+      left: 50%;
+      
+    }
+#section{
+  max-height: 100vh;
+  
+}
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #4cd6ad, 0 0 70px #4cd6ad;
+    }
+  
+    to {
+      text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #66e6bf, 0 0 90px #66e6bf;
+    }
+  }
